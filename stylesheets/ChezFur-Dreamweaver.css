@@ -1,0 +1,182 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the default font */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    font-size: 16px;
+    /* Base font size */
+}
+
+/* Header Styles */
+header {
+    background-color: #f8d8c7;
+    /* Light gray background for header */
+    padding: 20px;
+    /* Padding around the header */
+    text-align: center;
+    /* Center content in the header */
+}
+
+
+/* Main Content Styles */
+main {
+    /* 20px; /* Padding for main content area */
+    padding: 1.25rem;
+    background-color: #e6cbae;
+    min-height: 100vh;
+}
+
+/*making the services to the center of the screen*/
+
+main section#services {
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+}
+
+/*adjusting the services images*/
+#services img{
+	width: 300px;
+	height: 300px;
+}
+
+/* clearing out the floats on main */
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* aside box styloing */
+
+/* main section */
+
+
+/* Optional: Add some styling to the sidebar */
+.sidebar {
+    background-color: #f9f9f9;
+    /* Light background */
+    padding: 10px;
+    /* Spacing */
+    border: 1px solid #ccc;
+    /* Border around sidebar */
+    margin-top: 20px;
+    /* Spacing from the main content */
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #fdf5e6;
+    /* Light gray background for footer */
+    padding: 20px;
+    /* Padding around footer */
+    text-align: center;
+    /* Center content in footer */
+    clear: both;
+}
+
+/*fixing the header image*/
+#header .flex-row .logo.rounded-image {
+	max-height: 400px;
+}
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Small Screen Styles */
+@media (max-width: 600px) {
+    header {
+        background-image: url('../images/LogoSmall.png');
+        /* Small logo for mobile */
+        background-repeat: no-repeat;
+        /* No repeat */
+        background-position: right top;
+        /* Position logo */
+        min-height: 50px;
+        /* Minimum height for small screens */
+    }
+
+    /* main spacing adjusted */
+    main {
+        padding: 0.8rem;
+    }
+    
+    /* nav spacing adjusted */
+    nav {
+        padding:5px;
+    }
+
+    .navcontainer {
+        flex-direction: row;
+    }
+
+    /* nav li horizontal alignment */
+    nav ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: inline;
+        color: #2f632a;
+        font-size: 15px;
+    }
+
+
+
+    /* aside for mobile */
+    aside {
+        padding: 5px;
+        float: left;
+        width: 93%;
+        font-size: 15px;
+    }
+    
+    main section {
+        float: right;
+        width: 100%;
+    }
+#header .flex-row .logo.rounded-image {
+	width: 100%;
+}
+
+
+ 
+    
+}
+
+/* Large Screen Styles */
+@media (min-width: 601px) {
+    header {
+        background-image: url('../images/LogoLarge.png');
+        /* Large logo for desktop */
+        background-repeat: no-repeat;
+        /* No repeat */
+        background-position: bottom right;
+        /* Position logo */
+        min-height: 100px;
+        /* Minimum height for large screens */
+    }
+
+    /* vertical nav */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        /** display top to bottom*/
+        /* Stack vertically instead of horizontally */
+    }
+
+    .navigation-and-banner {
+        display: flex;
+        flex-direction: row;
+        /** display left to right */
+    }
+}
+

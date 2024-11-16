@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	<!-- custom css-->
+	<link rel="stylesheet" href="stylesheets/ChezFur-Dreamweaver.css" >
+  </head>
+  <body>
+	  
+		<!-- header-->
+	   <header id="header" class="flex-col">
+            <h1>Chez Fur</h1>
+            <h2>by Suzy Schaffer</h2>
+            <div class="flex-row">
+
+                <img src="images/pexels-egojane.jpg" alt="Cat lounging"
+                    class="logo rounded-image">
+            </div>
+        </header>
+  
+	<!--	bootstrap navigation  -->
+<!--	  it'd be difficult to code by hand becasue I'd need to do a lot of css for navigation bar and make it responsive. Bootstrap handled navigation functionalites as well on different screen sizes like open the menu and close the menu which needs HTML, CSS and JavaScript. I can easily use the navigation component from dreamweaver -->
+  	<div class="container">
+	  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="#">Chez Fur</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+		<!-- navigation list-->
+	      <ul class="navbar-nav mr-auto">
+			  <li class="nav-item"> <a class="nav-link" href="index.html">Home </a> </li>
+	        <li class="nav-item"> <a class="nav-link" href="menu.html">Menu</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="our_hosts.html">Our Hosts</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="contact.html">Contact</a> </li>
+			<li class="nav-item"> <a class="nav-link" href="adoptions.html">Adoptions</a> </li>
+			<li class="nav-item active"> <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a> </li>
+			</ul>
+        </div>
+      </nav>
+    </div>
+
+<!--	  main content-->
+	  <main>
+<!--		  services section -->
+	  	<section id="services">
+                    <h2>Our Services</h2>
+                    <h3 class="service-title">Available cats for Adoption</h3>
+                    <div>
+						<img src="images/Daizy.jpg" alt="Daizy" class="img-fluid" >
+                        <h4 class="mb-0"><strong>Daizy</strong></h4>
+                        <p class="mb-2">Age: 2 years <br> Breed: Siamese</p>
+   </div>
+                      	<img src="images/pexels.jpg" alt="Bella" class="img-fluid" >
+                        <h4 class="mb-0"><strong>Bella</strong></h4>
+                        <p class="mb-2">Age: 1 year <br> Breed: Maine Coon</p>
+						  <div>
+						<img src="images/thumb-1920-315251.jpg" alt="Simba" class="img-fluid" >
+                         <h4 class="mb-0"><strong>Simba</strong></h4>
+                        <p>Age: 3 years <br> Breed: Persian Cat</p>
+					
+                    </div>
+                </section>
+
+	  </main>
+	       <!-- Footer Section -->
+
+        <footer>
+            <address>
+                <p>123 Cat Street<br >Cat City, CC 12345</p>
+                <p>
+                    Email: <a
+                        href="mailto:contact@chezfur.com">contact@chezfur.com</a>
+                </p>
+            </address>
+            <a href="https://www.northeastern.edu/" target="_blank"><img
+                    src="images/sponsorLogo.jpg"
+                    alt="Northeastern University Logo"
+                    class="sponsor" ></a>
+            <p>© 2024 Chez Fur. All rights reserved.</p>
+            <p>Phone: (123) 456-7890</p>
+        </footer>
+	  
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>

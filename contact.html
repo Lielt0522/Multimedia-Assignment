@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheets/ChezFur.css">
+        <!-- CSS file linked -->
+        <title>Chez Fur - Contact</title>
+
+    </head>
+    <body onload="myFunction()">
+        <!-- Header Section -->
+        <header id="header" class="flex-col">
+            <h1>Chez Fur</h1>
+            <h2>by Suzy Schaffer</h2>
+            <div class="flex-row">
+
+                <img src="images/pexels-egojane.jpg" alt="Cat lounging"
+                    class="logo rounded-image">
+            </div>
+        </header>
+
+        <div class="navigation-and-banner w-100p">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="our_hosts.html">Our Hosts</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="adoptions.html">Adoptions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+
+            <section class="banner flex-grow banner-image">
+				<h2>Cats</h2>
+                <img src="images/cats.avif" alt="cats" class="w-100p"
+                    style="height:100%;">
+            </section>
+        </div>
+
+        <!-- Main Content Section -->
+        <main class="text-center p-5">
+            <section class="contact-us">
+                <h2>Contact Us</h2>
+                <h3>Let us know how to contact you with the answers you
+                    need</h3>
+                <p>Fill the information so that we can contact you at your
+                    connvenient time.</p>
+
+                <form method="post"
+                    action="https://webdevbasics.net/scripts/demo.php">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="john doe" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="demo@email.com" required>
+
+                    <label for="phone">Phone number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="123-123-1234"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                    <label for="preferred-contact">Preferred contact:</label>
+
+                    <select name="preferred-contact" id="preferred-contact">
+                        <option value="email" selected>Email me</option>
+                        <option value="phone-afternoon">Phone me between 1pm -
+                            4pm</option>
+                        <option value="phone-evening">Phone me between 6pm -
+                            9pm</option>
+                    </select>
+
+                    <label for="concern">Question or Concerrn?</label>
+
+                    <textarea id="concern" name="concern" rows="4"
+                        cols="50" placeholder="Enter your message"></textarea>
+
+                    <input type="submit" value="Send Now!" >
+                </form>
+
+                <p>Email: <a
+                        href="mailto:contact@chezfur.com">contact@chezfur.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Cat Street, Cat City, CC 12345</p>
+            </section>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="contact-footer">
+            <address>
+                <p>123 Cat Street<br>Cat City, CC 12345</p>
+                <p>Email: <a
+                        href="mailto:contact@chezfur.com"
+                        class="text-white">contact@chezfur.com</a></p>
+            </address>
+            <a href="https://www.northeastern.edu/" target="_blank"><img
+                    src="images/sponsorLogo.jpg"
+                    alt="Northeastern University Logo" class="sponsor"></a>
+            <p>© 2024 Chez Fur. All rights reserved.</p>
+            <p>Phone: (123) 456-7890</p>
+            <p id="date"></p>
+            <script>
+                const d = new Date().toDateString();
+                document.getElementById("date").innerHTML = d;
+            </script>
+        </footer>
+
+        <script src="scripts/contact.js"></script>
+    </body>
+</html>

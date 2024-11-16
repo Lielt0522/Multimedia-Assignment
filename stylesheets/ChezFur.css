@@ -1,0 +1,549 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the default font */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    font-size: 16px;
+    /* Base font size */
+}
+
+/* Header Styles */
+header {
+    background-color: #f8d8c7;
+    /* Light gray background for header */
+    padding: 20px;
+    /* Padding around the header */
+    text-align: center;
+    /* Center content in the header */
+}
+
+
+
+/* Navigation Styles */
+nav {
+    /* Dark background for navigation */
+    background-color: #333;
+    /* overflow: hidden; */
+    /* Clear floats */
+    /* Separate nav from header */
+    padding: 10px;
+}
+
+.navcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+nav ul li {
+    margin-bottom: 15px;
+    background-color: aqua;
+    /* White text for navigation links */
+    text-align: center;
+    /* float: left; */
+    /* Align navigation items horizontally */
+}
+
+nav li {
+    list-style-type: none;
+}
+
+.navcontainer a {
+    margin-bottom: 15px;
+    background-color: aqua;
+    /* White text for navigation links */
+    text-align: center;
+    /* Align navigation items horizontally */
+    text-decoration: none;
+    display: block;
+    /* Make the entire area clickable */
+    color: #000;
+
+    /* Center text in links */
+    padding: 8px 16px;
+    /* Padding for navigation links */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 16px;
+}
+
+nav ul li a {
+    display: block;
+    /* Make the entire area clickable */
+    color: #000;
+
+    /* Center text in links */
+    padding: 8px 16px;
+    /* Padding for navigation links */
+    text-decoration: none;
+    /* Remove underline from links */
+    font-size: 16px;
+}
+
+nav ul li a:hover, .navcontainer a:hover {
+    background-color: #fff7f7;
+    /* Darker background on hover */
+}
+
+.hostscontainer {
+    display: flex;
+
+}
+
+.hostscontainer .navigation-and-banneee {
+    width: 15%;
+    height: 100%;
+}
+
+.banner-image h2 {
+    display: none;
+}
+
+/* Main Content Styles */
+main {
+    /* 20px; /* Padding for main content area */
+    padding: 1.25rem;
+    background-color: #e6cbae;
+    min-height: 100vh;
+}
+
+.hostscontainer main {
+    width: 85%;
+    overflow: scroll;
+    padding: 0;
+}
+
+/* clearing out the floats on main */
+
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* aside box styloing */
+aside {
+    padding: 10px 8px;
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: orange;
+    float: left;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+/* main section */
+main section {
+    float: right;
+    width: 75%;
+}
+
+
+/* Optional: Add some styling to the sidebar */
+.sidebar {
+    background-color: #f9f9f9;
+    /* Light background */
+    padding: 10px;
+    /* Spacing */
+    border: 1px solid #ccc;
+    /* Border around sidebar */
+    margin-top: 20px;
+    /* Spacing from the main content */
+}
+
+/* Responsive Hero Image */
+.responsive-hero {
+    width: 18.75rem;
+    /* 300px */
+    height: auto;
+    /* Maintain aspect ratio */
+    max-height: 500px;
+    /* Restrict max height for responsiveness */
+    display: block;
+    margin: 1.25rem 20px auto;
+
+}
+
+
+/* Featured Cat Styles */
+
+.featured-cat {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 50%;
+    /* Make the image round */
+
+    margin: 10px auto;
+
+    display: block;
+
+}
+
+/* Footer Styles */
+footer {
+    background-color: #fdf5e6;
+    /* Light gray background for footer */
+    padding: 20px;
+    /* Padding around footer */
+    text-align: center;
+    /* Center content in footer */
+    clear: both;
+}
+
+.sponsor-images {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.sponsor {
+    width: 100px;
+    /* Adjust size as needed */
+    height: 100px;
+}
+
+
+/* Styles for Figure and Figcaption */
+figure {
+    margin: 20px;
+    /* Space around each figure */
+    text-align: center;
+    /* Center the caption under the image */
+}
+
+figcaption {
+    font-style: italic;
+    /* Italicize the caption text */
+    margin-top: 5px;
+    /* Space between the image and caption */
+    color: #555;
+    /* Set a color for the caption text */
+}
+
+
+.main-heading {
+    border-radius: 20px;
+    border: 5px solid rgb(219, 209, 209);
+    padding: 10px;
+    background: orange;
+
+}
+
+/* gallery container using flexbox */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* alumni cats section */
+main section.alumni-cats {
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: auto;
+    gap: 10px;
+}
+
+/* images responsiveness */
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item1 {
+    grid-column: span 2;
+}
+
+.item4, .item5 {
+    grid-row: span 2;
+}
+
+main section.contact-us {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: left;
+}
+
+
+
+input[type=text], input[type=email], input[type=tel], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #333;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: aqua;
+    color: #000;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(72, 221, 221);
+}
+
+
+/* Media Queries for Responsive Design */
+
+/* Small Screen Styles */
+@media (max-width: 600px) {
+    header {
+        background-image: url('../images/LogoSmall.png');
+        /* Small logo for mobile */
+        background-repeat: no-repeat;
+        /* No repeat */
+        background-position: right top;
+        /* Position logo */
+        min-height: 50px;
+        /* Minimum height for small screens */
+    }
+
+    /* main spacing adjusted */
+    main {
+        padding: 0.8rem;
+    }
+
+    /* nav spacing adjusted */
+    nav {
+        padding: 5px;
+    }
+
+    .navcontainer {
+        flex-direction: row;
+    }
+
+    /* nav li horizontal alignment */
+    nav ul li {
+        display: inline;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: inline;
+        color: #2f632a;
+        font-size: 15px;
+    }
+
+
+
+    /* aside for mobile */
+    aside {
+        padding: 5px;
+        float: left;
+        width: 93%;
+        font-size: 15px;
+    }
+
+    main section {
+        float: right;
+        width: 100%;
+    }
+
+    .hostscontainer {
+        flex-direction: column;
+    }
+
+    .hostscontainer .navigation-and-banneee {
+        width: 100%;
+    }
+
+    .navcontainer {
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .navcontainer a {
+        margin-bottom: 0;
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .hostscontainer main {
+        height: auto;
+        overflow: auto;
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+
+    .item1 {
+        grid-column: span 2;
+    }
+
+    .item4, .item5 {
+        grid-row: span 2;
+    }
+
+    .item6 {
+        grid-column: span 2;
+    }
+
+}
+
+/* Large Screen Styles */
+@media (min-width: 601px) {
+    header {
+        background-image: url('../images/LogoLarge.png');
+        /* Large logo for desktop */
+        background-repeat: no-repeat;
+        /* No repeat */
+        background-position: bottom right;
+        /* Position logo */
+        min-height: 100px;
+        /* Minimum height for large screens */
+    }
+
+    /* vertical nav */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        /** display top to bottom*/
+        /* Stack vertically instead of horizontally */
+    }
+
+    .navigation-and-banner {
+        display: flex;
+        flex-direction: row;
+        /** display left to right */
+    }
+
+
+    main section.contact-us {
+        width: 60%;
+    }
+
+}
+
+/* Color Palette Documentation */
+/* Chosen Colors:
+   - Light Gray (#f2f2f2) for header and footer to create a soft, neutral look.
+   - Dark Gray (#333) for navigation to provide contrast and improve readability.
+   - Darker Gray (#111) on hover for navigation links enhances interactivity.
+   Documentation: Color palette chosen for accessibility and visual clarity.
+*/
+
+
+/** make flex widths in 10s for 100%*/
+.w-25p {
+    width: 25%;
+}
+
+.w-50p {
+    width: 50%;
+}
+
+.w-75p {
+    width: 75%;
+}
+
+.w-100p {
+    width: 100%;
+}
+
+.flex-row, .flex-col {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.flex-col {
+    flex-direction: column;
+}
+
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.fitted-image {
+    object-fit: contain;
+    width: 200px;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+/* padding 1-5 */
+
+.p-1 {
+    padding: 0.25rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.p-3 {
+    padding: 1rem;
+}
+
+.p-4 {
+    padding: 1.5rem;
+}
+
+.p-5 {
+    padding: 2rem;
+}
+
+/* add bottom margin to dd */
+dd {
+    margin-top: 0.4rem;
+    margin-bottom: 1.2rem;
+}
+
+/* text center */
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.contact-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
